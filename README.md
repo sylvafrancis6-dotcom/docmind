@@ -33,3 +33,32 @@ DocMind is a full-stack AI web application that allows users to upload documents
 
 ## 📁 Project Structure
 
+
+---
+
+docmind/
+├── frontend/
+│   └── src/
+│       └── App.jsx
+├── backend/
+│   ├── main.py
+│   └── requirements.txt
+└── README.md
+
+## ⚙️ Getting Started
+
+### Backend
+
+```bash
+cd backend
+python -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+export ANTHROPIC_API_KEY=your_api_key_here
+uvicorn main:app --reload --port 8000
+
+Frontend
+cd frontend
+npm install
+npm run dev
+
